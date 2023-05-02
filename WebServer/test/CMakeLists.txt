@@ -1,0 +1,5 @@
+add_executable(multiple_clientTest multiple_client.cpp)
+target_link_libraries(multiple_clientTest PRIVATE WebServer pthread)
+
+add_executable(serverTest server.cpp)
+target_link_libraries(serverTest PRIVATE WebServer pthread)
